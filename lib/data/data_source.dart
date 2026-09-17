@@ -5,7 +5,6 @@ import 'package:health_tracker/data/models/steps_taken_model.dart';
 import 'package:health_tracker/data/repositories/data_strem_repo.dart';
 import '../core/constants.dart';
 
-
 class DataSource implements DataStreamSource {
   DataSource({Random? random}) : _random = random ?? Random();
 

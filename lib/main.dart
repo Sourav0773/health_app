@@ -1,23 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'app.dart';
 
 void main() {
-  runApp(const HealthApp());
-}
-
-class HealthApp extends StatelessWidget {
-  const HealthApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Health Tracker',
-      theme: ThemeData.dark(useMaterial3: true),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Health Tracker Initialized'),
-        ),
-      ),
-    );
-  }
+  runApp(const ProviderScope(child: HealthApp()));
 }
