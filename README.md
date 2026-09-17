@@ -3,15 +3,17 @@
 A helath tracker app
 
 ## Getting Started
+* 🎬 **Screen Recording**: [Watch Demo Video](https://drive.google.com/file/d/1zEOlR3uSxNzbXI8WnPCiy41hL9zQWD7D/view?usp=drive_link)
 
-This project is a starting point for a Flutter application.
+  ## 🏗️ Architecture Overview
 
-A few resources to get you started if this is your first Flutter project:
+The app follows a clean, layer-separated architecture using **Riverpod** (`StateNotifierProvider`) for state management:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+* **Data Layer (`lib/data`)**: Defines data models (`StepsTakenModel`, `HeartBeatModel`) and streaming sources (`HealthConnectService`, `Data Source`).
+* **Presentation Layer (`lib/presentation`)**: Pure Flutter UI.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  ## 🧪 Tests Implemented
+
+* **Unit Testing (`test/unit/`)**:
+
+## ⚙️ CI Pipeline (GitHub Actions)
